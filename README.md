@@ -2,7 +2,9 @@
 This repository contains the framework from the [Bachelor's Thesis](https://scripties.uba.uva.nl/).
 
 # Demo video
-<video src='media/demo.mp4' width=1080></video>
+https://github.com/user-attachments/assets/6023cac4-2ada-432c-b859-16fbcab8fc63
+
+
 
 # Install Guide
 - Create a Python 3.10(.9) environment.
