@@ -7,15 +7,13 @@ from datetime import datetime
 from ultralytics import YOLO
 from sklearn.decomposition import PCA
 
-import EasyPySpin
 import calibrate as cb
 
 # Load the YOLOv8 model
 model = YOLO("weights/best.pt")
 
 # Open the camera
-# cap = cv2.VideoCapture(0)
-cap = EasyPySpin.VideoCapture(0)
+cap = cv2.VideoCapture(0)
 
 # Set the checkerboard grid size, where 
 # grid_n is the height and grid_m is the width.
@@ -29,12 +27,10 @@ disable_calibration = False
 disable_networking = False
 
 # Set the server address
-server_address = "http://192.168.0.179:8080"
-#server_address = "http://localhost:8080"
+server_address = "http://localhost:8080"
 
 # Set the minimum confidence value to detect an object
 confidence = 0.6
-
 
 # Start a session
 session = None
